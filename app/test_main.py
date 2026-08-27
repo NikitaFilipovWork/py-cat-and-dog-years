@@ -17,7 +17,7 @@ from app.main import get_human_age
                      id="third human year for cats, but not for dogs"),
         pytest.param(100, 100, [21, 17],
                      id="third human year for cats, but not for dogs"),
-pytest.param(100, 50, [21, 7], id="different_ages")
+        pytest.param(100, 50, [21, 7], id="different_ages")
     ]
 )
 def test_get_human_age(cat_age: int, dog_age: int, result: list[int]) -> None:
